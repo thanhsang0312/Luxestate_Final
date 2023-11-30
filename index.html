@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Luxestate</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Meta tag -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Luxestate">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Sang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag Facebook -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body>
+    <!-- Script -->
+    <script src="js/main.js"></script>
+    <!-- Scroll to top button -->
+    <button onclick="scrollToTop()" id="myBtn" title="Go to top"><img srcset="img/arrow-up.png 15x" alt=""></button>
+    <!-- end Scroll to top button -->
+    <header class="header">
+        <div class="container">
+            <a class="header__logo" onclick="scrollToTop()"><img srcset="img/logo-header.png 2x"
+                    alt="logo-luxestate"></a>
+            <ul class="header__navbar">
+                <li><a onclick="scrollToCompany()">abouts</a></li>
+                <li><a onclick="scrollToApartments()">apartments</a></li>
+                <li><a onclick="scrollToWorks()">how it works</a></li>
+                <li><a onclick="scrollToAgents()">agents</a></li>
+                <li><a onclick="scrollToLocation()">contact us</a></li>
+            </ul>
+            <div class="header__cta">
+                <a onclick="scrollToGIT()" class="header__cta--btn">join us</a>
+                <a href="#" class="header__cta--btn --yellow">getting started</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__top">
+                    <h1 class="heading --lv1">Find Your New <br>Modern Apartment</h1>
+                    <div class="hero__top--form">
+                        <div class="search--icon">
+                            <img srcset="img/icon-search.png 2x" alt="">
+                        </div>
+                        <div class="search__field">
+                            <input type="text" class="search-input" placeholder="Search locations">
+                            <input type="submit" value="Search" class="search__field--btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__bottom">
+                    <div class="hero__bottom--arrow">
+                        <span>Scroll Down</span>
+                        <img srcset="img/down-arrow.png 2x" alt="">
+                    </div>
+                    <div class="hero__bottom--contact">
+                        <a href="tel:1234567" class="hero__contact--detail">
+                            <img srcset="img/icon-phone.png 2x" alt="">
+                            <span>(000) 123-4567</span>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Melbourne+Victoria,+%C3%9Ac/@-37.9715652,144.7235015,10z/data=!3m1!4b1!4m6!3m5!1s0x6ad646b5d2ba4df7:0x4045675218ccd90!8m2!3d-37.8136276!4d144.9630576!16zL20vMGNoZ3pt?entry=ttu"
+                            target="_blank" class="hero__contact--detail">
+                            <img srcset="img/icon-location.png 2x" alt="">
+                            <span>Melbourne, Australia</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source media="(max-width:992px)" srcset="img/hero-banner-luxestate-tablet.jpg">
+                <img src="img/hero-banner.jpg" alt="">
+            </picture>
+        </section>
+        <div class="company" id="abouts">
+            <div class="container">
+                <div class="company__content">
+                    <div class="textbox">
+                        <h2 class="heading --lv2">Our’s Company <br>Statistics</h2>
+                    </div>
+                    <div class="company__content--text">
+                        <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing
+                            these latest prospects is like putting socks on an octopus, yet due diligence. </p>
+                        <p>We need to get all stakeholders up to speed and in the right place hard stop, or
+                            technologically savvy or pre launch. Pro-sumer software commitment to the cause offline this
+                            discussion and wiggle room blue sky. Beef up teams were able to drive adoption and
+                            awareness. Screw the pooch killing it. </p>
+                    </div>
+                </div>
+                <div class="company__boxs">
+                    <div class="company__boxs--item">
+                        <p class="number">748</p>
+                        <p class="text">apartments</p>
+                    </div>
+                    <div class="company__boxs--item">
+                        <p class="number">3854</p>
+                        <p class="text">clients</p>
+                    </div>
+                    <div class="company__boxs--item">
+                        <p class="number">24</p>
+                        <p class="text">employees</p>
+                    </div>
+                    <div class="company__boxs--item">
+                        <p class="number">14</p>
+                        <p class="text">awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="apartments" id="apartments">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading --lv2">More Then 500+ <br>Apartments For Rent</h2>
+                </div>
+                <div class="apartments__thumbnail">
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-1.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="">
+                                <h3 class="title">Random Street, Apt B453, New York</h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-2.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="#">
+                                <h3 class="title">Reference site about Lorem Ipsum, giving information on its origins,
+                                    as well Reference site about Lorem Ipsum, giving information on its origins, as
+                                    wellReference site about Lorem Ipsum, giving information on its origins, as well
+                                </h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-3.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="">
+                                <h3 class="title">Random Street, Apt B453, New York</h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-4.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="">
+                                <h3 class="title">Random Street, Apt B453, New York</h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-5.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="">
+                                <h3 class="title">Random Street, Apt B453, New York</h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartments__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/apartments-thumb-6.jpg" alt=""></a>
+                        <div class="item__info">
+                            <a href="">
+                                <h3 class="title">Random Street, Apt B453, New York</h3>
+                            </a>
+                            <div class="item__info--detail">
+                                <p class="price">$3,500</p>
+                                <div class="convenience">
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-shower.png 2x" alt="">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="convenience__item">
+                                        <img srcset="img/icon-bed.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="apartments__btn">view all apartments</a>
+            </div>
+        </div>
+        <div class="works" id="works">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading --lv2">How it works?</h2>
+                    <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                        recap by eod, cob or whatever comes first agile at the end of the day. </p>
+                </div>
+                <div class="works__list">
+                    <!-- ** Use class "--active" for highlight item! **  -->
+                    <div class="works__list--item">
+                        <p class="big-number">01</p>
+                        <h3 class="title --lv2">01 Find Your Location</h3>
+                        <div class="info">
+                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.
+                            </p>
+                            <a href="#" target="_blank" class="btnline"> Find Location</a>
+                        </div>
+                    </div>
+                    <div class="works__list--item">
+                        <p class="big-number">02</p>
+                        <h3 class="title --lv2">02 Find Apartment</h3>
+                        <div class="info">
+                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.
+                            </p>
+                            <a href="#" target="_blank" class="btnline"> Find Apartment</a>
+                        </div>
+                    </div>
+                    <div class="works__list--item">
+                        <p class="big-number">03</p>
+                        <h3 class="title --lv2">03 Make Contact</h3>
+                        <div class="info">
+                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day.
+                            </p>
+                            <a href="#" target="_blank" class="btnline"> Make Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading --lv2">Services</h2>
+                    <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                        first agile at the end of the day. </p>
+                </div>
+                <div class="services__content">
+                    <div class="services__content--thumbnail">
+                        <img src="img/services-banner.jpg" alt="">
+                    </div>
+                    <div class="services__content--info">
+                        <div class="detail">
+                            <h3 class="heading --lv3">Renting</h3>
+                            <p class="detail__des">In this space market-facing, yet UI work flows , or bake it in. Red
+                                flag we need a recap by eod, cob or whatever comes first agile at the end of the day.
+                                Not enough bandwidth closing these latest prospects is like putting socks on an octopus,
+                                yet due diligence</p>
+                        </div>
+                        <div class="detail">
+                            <h3 class="heading --lv3">Selling</h3>
+                            <p class="detail__des">In this space market-facing, yet UI work flows , or bake it in. Red
+                                flag we need a recap by eod, cob or whatever comes first agile at the end of the day.
+                                Not enough bandwidth closing these latest prospects is like putting socks on an octopus,
+                                yet due diligence</p>
+                        </div>
+                        <div class="detail">
+                            <h3 class="heading --lv3">Building</h3>
+                            <p class="detail__des">In this space market-facing, yet UI work flows , or bake it in. Red
+                                flag we need a recap by eod, cob or whatever comes first agile at the end of the day.
+                                Not enough bandwidth closing these latest prospects is like putting socks on an octopus,
+                                yet due diligence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agents" id="agents">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading --lv2">Meet Our Agents</h2>
+                    <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                        recap by eod, cob or whatever comes first agile at the end of the day. </p>
+                </div>
+                <div class="agents__thumbnail">
+                    <div class="agents__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/agents-thumb-1.jpg" alt=""></a>
+                        <div class="item__info">
+                            <h3 class="title"><a href="#">Agent 01</a></h3>
+                            <div class="item__info--detail">
+                                <p class="name">Mr. Luke Skywalker</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/cfdcircle" target="_blank">
+                                        <img srcset="img/icon-facebook.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-facebook-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="#">
+                                        <img srcset="img/icon-twitter.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-twitter-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="https://cfdcircle.vn/" target="_blank">
+                                        <img srcset="img/icon-website.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-dribble-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agents__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/agents-thumb-2.jpg" alt=""></a>
+                        <div class="item__info">
+                            <h3 class="title"><a href="">Agent 02</a></h3>
+                            <div class="item__info--detail">
+                                <p class="name">Mr. Join Naldo</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/cfdcircle" target="_blank">
+                                        <img srcset="img/icon-facebook.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-facebook-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="#">
+                                        <img srcset="img/icon-twitter.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-twitter-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="https://cfdcircle.vn/" target="_blank">
+                                        <img srcset="img/icon-website.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-dribble-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agents__thumbnail--item">
+                        <a href="#" class="item__img"><img src="img/agents-thumb-3.jpg" alt=""></a>
+                        <div class="item__info">
+                            <h3 class="title"><a href="">Agent 03</a></h3>
+                            <div class="item__info--detail">
+                                <p class="name">Mr. Leo Bubble</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/cfdcircle" target="_blank">
+                                        <img srcset="img/icon-facebook.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-facebook-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="#">
+                                        <img srcset="img/icon-twitter.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-twitter-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                    <a href="https://cfdcircle.vn/" target="_blank">
+                                        <img srcset="img/icon-website.png 2x" alt="" class="icon-main">
+                                        <img srcset="img/icon-dribble-hover.png 2x" alt="" class="icon-main-hover">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location" id="contact">
+            <div class="container">
+                <div class="location__info">
+                    <div class="location__info--thumbnail">
+                        <img src="img/location-thumb-1.jpg" alt="">
+                        <a href="https://www.google.com/maps/place/Melbourne+Victoria,+%C3%9Ac/@-37.9715652,144.7235015,10z/data=!3m1!4b1!4m6!3m5!1s0x6ad646b5d2ba4df7:0x4045675218ccd90!8m2!3d-37.8136276!4d144.9630576!16zL20vMGNoZ3pt?entry=ttu"
+                            target="_blank" class="pin">
+                            <img srcset="img/icon-location.png 2x" alt="">
+                            <span>Melbourne,Australia</span>
+                        </a>
+                    </div>
+                    <div class="location__info--content">
+                        <h3 class="heading --lv3">Super Awesome Add</h3>
+                        <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need
+                            a recap by eod, cob or whatever comes first agile at the end of the day. Not enough
+                            bandwidth closing these latest prospects is like putting socks on an octopus, yet due
+                            diligence</p>
+                    </div>
+                </div>
+                <div class="location__info --reverse">
+                    <div class="location__info--thumbnail">
+                        <img src="img/location-thumb-2.jpg" alt="">
+                        <a href="https://www.google.com/maps/place/Melbourne+Victoria,+%C3%9Ac/@-37.9715652,144.7235015,10z/data=!3m1!4b1!4m6!3m5!1s0x6ad646b5d2ba4df7:0x4045675218ccd90!8m2!3d-37.8136276!4d144.9630576!16zL20vMGNoZ3pt?entry=ttu"
+                            target="_blank" class="pin">
+                            <img srcset="img/icon-location.png 2x" alt="">
+                            <span>Melbourne,Australia</span>
+                        </a>
+                    </div>
+                    <div class="location__info--content">
+                        <h3 class="heading --lv3">Super Awesome Add</h3>
+                        <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need
+                            a recap by eod, cob or whatever comes first agile at the end of the day. Not enough
+                            bandwidth closing these latest prospects is like putting socks on an octopus, yet due
+                            diligence</p>
+                    </div>
+                </div>
+                <div class="location__info">
+                    <div class="location__info--thumbnail">
+                        <img src="img/location-thumb-3.jpg" alt="">
+                    </div>
+                    <div class="location__info--content">
+                        <div class="content">
+                            <h3 class="heading --lv3">Super Awesome Add</h3>
+                            <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                                need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough
+                                bandwidth closing these latest prospects is like putting socks on an octopus, yet due
+                                diligence</p>
+                        </div>
+                        <a href="#" class="location__btn">show me more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="git" id="git">
+            <div class="git__content">
+                <div class="textbox">
+                    <h2 class="heading --lv2">Get In Touch</h2>
+                    <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                        recap by eod, cob or whatever comes first agile at the end of the day. </p>
+                </div>
+                <div class="git__content--form">
+                    <form action="#" method="#" class="git__form">
+                        <div class="form__group">
+                            <input type="text" id="fname" placeholder="Name">
+                            <div class="error-message">This field cannot be empty!</div>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="fmail" placeholder="Email">
+                            <div class="error-message">This field cannot be empty!</div>
+                        </div>
+                        <div class="form__group group__phone">
+                            <div class="form__group--select">
+                                <select name="code" id="region-code">
+                                    <option value="+84">VN</option>
+                                    <option value="+1">US</option>
+                                    <option value="+44">UK</option>
+                                    <option value="+90">Turkey</option>
+                                    <option value="+66">Thailand</option>
+                                    <option value="+46">Sweden</option>
+                                    <option value="+81">Japan</option>
+                                </select>
+                            </div>
+                            <div class="form__group--number">
+                                <input type="text" id="phone" placeholder="(+84) 123 456 789">
+                            </div>
+                        </div>
+                        <div class="error-message">This field cannot be empty!</div>
+                        <div class="form__group">
+                            <textarea name="" id="" rows="4" placeholder="Tell us something...."></textarea>
+                        </div>
+                        <div class="form__group --radio">
+                            <h3 class="title">Select the services:</h3>
+                            <div class="radio">
+                                <label class="form__group--radio" for="renting">Renting
+                                    <input type="radio" id="renting" name="service">
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="form__group--radio" for="selling">Selling
+                                    <input type="radio" id="selling" name="service">
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="form__group--radio" for="building">Building
+                                    <input type="radio" id="building" name="service">
+                                    <span class="radiomark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__group --checkbox">
+                            <h3 class="title">Which channel you want to connect?</h3>
+                            <!--  -->
+                            <label class="form__group--checked" for="fb">Facebook
+                                <input type="checkbox" id="fb" name="fb">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form__group--checked" for="mail">Email
+                                <input type="checkbox" id="mail" name="mail">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form__group--checked" for="_phone">Phone
+                                <input type="checkbox" id="_phone" name="_phone">
+                                <span class="checkmark"></span>
+                            </label>
+                            <!--  -->
+                        </div>
+                        <input type="submit" value="Send Us" class="git__btn">
+                    </form>
+                </div>
+            </div>
+            <div class="git__thumbnail">
+                <img src="img/git-banner.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__heading">
+                <h2 class="footer__heading--title">luxestate <br>Explore Real Estate</h2>
+                <div class="footer__heading--form">
+                    <form action="#">
+                        <input type="text" id="footer" placeholder="Subscribe To Our Newsletter">
+                        <button><i><img srcset="img/right-arrow.png 2x" alt=""></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__ending">
+                <div class="footer__ending--logo">
+                    <a href=""><img srcset="img/logo-footer.png 2x" alt=""></a>
+                    <p>&copy; 2023 - CFD Circle,<br> All Right Reserved</p>
+                </div>
+                <div class="footer__ending--selection">
+                    <div class="select__list">
+                        <p>luxestate</p>
+                        <ul>
+                            <li><a href="#">Agents</a></li>
+                            <li><a href="#">Hunters</a></li>
+                        </ul>
+                    </div>
+                    <div class="select__list">
+                        <p>company</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Social</a></li>
+                        </ul>
+                    </div>
+                    <div class="select__list">
+                        <p>products</p>
+                        <ul>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">How It Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="select__list">
+                        <p>services</p>
+                        <ul>
+                            <li><a href="#">Renting</a></li>
+                            <li><a href="#">Selling</a></li>
+                            <li><a href="#">Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
