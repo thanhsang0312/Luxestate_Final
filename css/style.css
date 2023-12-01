@@ -59,6 +59,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: var(--text-cl);
+}
+
 /* Go to top BTN */
 #myBtn {
     display: block;
@@ -410,8 +414,15 @@ h1 {
     overflow: hidden;
 }
 
+
+
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__img {
     display: flex;
+    width: 100%;
+    height: 0;
+    padding-bottom: 120%;
+    position: relative;
+    display: block;
     transition: var(--dur-time);
     aspect-ratio: 350/380;
     object-fit: cover;
@@ -421,6 +432,10 @@ h1 {
     object-fit: cover;
     width: 101%;
     height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__img:hover {
