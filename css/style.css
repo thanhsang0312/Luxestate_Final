@@ -445,9 +445,10 @@ h1 {
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__info {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 18px 22px;
+    padding: 20px 20px 30px 22px;
     background-color: var(--white-cl);
-    height: calc(100% - 130px);
+    /* height: calc(100% - 130px); */
+    height: 120px;
 }
 
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__info .title {
@@ -463,6 +464,11 @@ h1 {
     overflow: hidden;
 }
 
+.apartments .apartments__thumbnail .apartments__thumbnail--item .item__info .title a {
+    line-height: normal;
+    display: block;
+}
+
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__info .item__info--detail {
     margin-top: auto;
     display: flex;
@@ -472,7 +478,9 @@ h1 {
 .apartments .apartments__thumbnail .apartments__thumbnail--item .item__info .item__info--detail .price {
     font-family: ms;
     font-size: var(--fz-btn);
-    line-height: 50px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
     letter-spacing: var(--ls-18-25);
     color: var(--bg-cl);
 }
