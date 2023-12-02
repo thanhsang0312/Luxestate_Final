@@ -705,6 +705,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 }
 
 .agents .agents__thumbnail .agents__thumbnail--item .item__info .item__info--detail .social {
