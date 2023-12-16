@@ -11,7 +11,7 @@ function scrollToApartments() {
         behavior: "smooth",
     });
 }
-function scrollToWorks(){
+function scrollToWorks() {
     const works = document.getElementById("works");
     works.scrollIntoView({
         behavior: "smooth",
@@ -42,6 +42,7 @@ function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: "smooth",
-      });
+    });
 }
 // End Scroll to top button
+
