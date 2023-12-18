@@ -64,8 +64,12 @@ a {
     color: var(--text-cl);
 }
 
+.onclick {
+    color: var(--bg-cl);
+}
+
 /* Go to top BTN */
-#myBtn {
+.myBtn {
     display: flex;
     position: fixed;
     align-items: center;
@@ -84,11 +88,17 @@ a {
     border-radius: 50%;
     transition: var(--dur-time);
     transform: rotate(-90deg);
+    opacity: 0;
+    visibility: hidden;
 }
 
-#myBtn img {}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
 
-#myBtn:hover {
+
+.myBtn:hover {
     background-color: var(--bg-cl);
     color: var(--white-cl);
 }

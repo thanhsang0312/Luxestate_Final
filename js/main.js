@@ -38,11 +38,28 @@ function scrollToGIT() {
 // End Scroll to section
 
 // Scroll to top button
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
+window.onscroll = function () {
+    scrollToTop();
 }
+function scrollToTop() {
+    const btnElement = document.querySelector('.myBtn');
+    const heroElement = document.querySelector('.hero');
+    const heroHeight = heroElement.clientHeight;
+    if (window.scrollY > heroHeight) {
+        btnElement.classList.add('show');
+        btnElement.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        })
+    }
+    else {
+        btnElement.classList.remove('show');
+    }
+}
+
+// scrollToTop();
+
 // End Scroll to top button
 
